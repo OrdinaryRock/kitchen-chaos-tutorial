@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43972e59edec0a448bd5c0c5c63321c6, type: 3}
-  m_Name: Tomato
+  m_Name: Bread
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9126226014448679767, guid: 42fc58cf0d05864438cd76353784d9d5, type: 3}
-  cuttingResult: {fileID: 11400000, guid: 6d937fb9fc19a154696e3e6b632d535c, type: 2}
-  sprite: {fileID: 21300000, guid: 91e8fe3de9249fc44b7bdd8050062896, type: 3}
-  objectName: Tomato
+  prefab: {fileID: 9126226014448679767, guid: fe69e809d227149418a05b7bd65ffd87, type: 3}
+  sprite: {fileID: 21300000, guid: 77b28124b8bda494381c80bd5aa42c22, type: 3}
+  objectName: Hamburger Bun
