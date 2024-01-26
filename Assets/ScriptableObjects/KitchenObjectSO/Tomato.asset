@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 9126226014448679767, guid: 42fc58cf0d05864438cd76353784d9d5, type: 3}
   cuttingResult: {fileID: 11400000, guid: 6d937fb9fc19a154696e3e6b632d535c, type: 2}
+  numberOfCuts: 3
   sprite: {fileID: 21300000, guid: 91e8fe3de9249fc44b7bdd8050062896, type: 3}
   objectName: Tomato

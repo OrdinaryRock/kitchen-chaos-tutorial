@@ -7,6 +7,11 @@ public class SelectedCounterVisual : MonoBehaviour
     [SerializeField] private BaseCounter baseCounter;
     [SerializeField] private GameObject[] visualGameObjectArray;
 
+    private void Awake()
+    {
+        HideVisualGameObject();
+    }
+
     private void Start()
     {
         Player.Instance.OnSelectedCounterChanged += Instance_OnSelectedCounterChanged;

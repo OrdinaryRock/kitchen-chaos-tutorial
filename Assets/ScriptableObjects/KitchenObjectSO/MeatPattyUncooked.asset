@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: MeatPattyUncooked
   m_EditorClassIdentifier: 
   prefab: {fileID: 9126226014448679767, guid: b8d6f72531d4b6e4e99adee64c851512, type: 3}
+  cuttingResult: {fileID: 0}
+  numberOfCuts: 10
   sprite: {fileID: 21300000, guid: aa1bacc24dde76e47b2ec0dd4e82385b, type: 3}
   objectName: Raw Beef

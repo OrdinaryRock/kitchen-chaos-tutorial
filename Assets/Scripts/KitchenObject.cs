@@ -18,6 +18,11 @@ public class KitchenObject : MonoBehaviour
         return kitchenObjectSO.cuttingResult;
     }
 
+    public int GetNumberOfCuts()
+    {
+        return kitchenObjectSO.numberOfCuts;
+    }
+
     public void SetKitchenObjectParent(IKitchenObjectParent kitchenObjectParent)
     {
         if(this.kitchenObjectParent != null) this.kitchenObjectParent.ClearKitchenObject();
@@ -31,7 +36,7 @@ public class KitchenObject : MonoBehaviour
             this.kitchenObjectParent.SetKitchenObject(this);
             transform.parent = kitchenObjectParent.GetKitchenObjectSpawnPosition();
             transform.localPosition = Vector3.zero;
-            transform.forward = Vector3.zero;
+            transform.forward = Vector3.forward;
         }
     }
 
