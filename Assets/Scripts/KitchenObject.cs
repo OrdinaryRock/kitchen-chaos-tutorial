@@ -18,9 +18,19 @@ public class KitchenObject : MonoBehaviour
         return kitchenObjectSO.cuttingResult;
     }
 
+    public KitchenObjectSO GetFryingResult()
+    {
+        return kitchenObjectSO.fryingResult;
+    }
+
     public int GetNumberOfCuts()
     {
         return kitchenObjectSO.numberOfCuts;
+    }
+
+    public float GetFryingTime()
+    {
+        return kitchenObjectSO.fryingTime;
     }
 
     public void SetKitchenObjectParent(IKitchenObjectParent kitchenObjectParent)

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43972e59edec0a448bd5c0c5c63321c6, type: 3}
-  m_Name: MeatPattyUncooked
+  m_Name: MeatPattyCooked
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9126226014448679767, guid: b8d6f72531d4b6e4e99adee64c851512, type: 3}
+  prefab: {fileID: 9126226014448679767, guid: cbe02979e9ac3fd439646238a0aab4f3, type: 3}
   cuttingResult: {fileID: 0}
   numberOfCuts: 10
-  fryingResult: {fileID: 11400000, guid: 4e70519f955f3174fb8d8f50486a1aec, type: 2}
+  fryingResult: {fileID: 11400000, guid: d2b0f911ef788e94eae51026f7b6ad6e, type: 2}
   fryingTime: 3
-  sprite: {fileID: 21300000, guid: aa1bacc24dde76e47b2ec0dd4e82385b, type: 3}
-  objectName: Raw Beef
+  sprite: {fileID: 21300000, guid: f1f50c7ef90b19741b26f2040806cf56, type: 3}
+  objectName: Grilled Beef
