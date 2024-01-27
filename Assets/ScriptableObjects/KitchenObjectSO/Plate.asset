@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43972e59edec0a448bd5c0c5c63321c6, type: 3}
-  m_Name: MeatPattyBurned
+  m_Name: Plate
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9126226014448679767, guid: e33cd174c68a8ed428318bde7a9dc37b, type: 3}
+  prefab: {fileID: 9126226014448679767, guid: 4b1eb4dd65c781f419cc687ce930602d, type: 3}
   cuttingResult: {fileID: 0}
-  numberOfCuts: 100
+  numberOfCuts: 0
   fryingResult: {fileID: 0}
   fryingTime: 0
-  sprite: {fileID: 21300000, guid: 713ea9afa60dd6e4ebf6503a33e8cc99, type: 3}
-  objectName: MeatPattyBurned
+  sprite: {fileID: 21300000, guid: 3928afb5321bb3d489bbd4ac581b29a2, type: 3}
+  objectName: Plate

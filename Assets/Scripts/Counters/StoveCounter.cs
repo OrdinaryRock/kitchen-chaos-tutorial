@@ -36,7 +36,21 @@ public class StoveCounter : BaseCounter, IHasProgress
     {
         if(HasKitchenObject())
         {
-            if(AttemptGiveKitchenObjectToPlayer(player))
+            if(player.HasKitchenObject())
+            {
+                if(player.GetKitchenObject() is PlateKitchenObject)
+                {
+                    PlateKitchenObject plateKitchenObject = player.GetKitchenObject() as PlateKitchenObject;
+                    if(plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
+                    {
+                        GetKitchenObject().DestroySelf();
+                        fryingProgress = 0;
+                        ToggleStove();
+                        UpdateProgressBar(0);
+                    }
+                }
+            }
+            else if(AttemptGiveKitchenObjectToPlayer(player))
             {
                 fryingProgress = 0;
                 ToggleStove();
@@ -54,7 +68,7 @@ public class StoveCounter : BaseCounter, IHasProgress
     }
     private bool AttemptTakeKitchenObjectFromPlayer(Player player)
     {
-        if(player.HasKitchenObject()) player.GetKitchenObject().SetKitchenObjectParent(this);
+        if(player.HasKitchenObject() && !(player.GetKitchenObject() is PlateKitchenObject)) player.GetKitchenObject().SetKitchenObjectParent(this);
         else return false;
         return true;
     }

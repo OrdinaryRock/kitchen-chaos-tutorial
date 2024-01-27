@@ -14,7 +14,7 @@ public class CuttingCounter : BaseCounter, IHasProgress
     {
         if(!HasKitchenObject())
         {
-            if(player.HasKitchenObject())
+            if(player.HasKitchenObject() && !(player.GetKitchenObject() is PlateKitchenObject))
             {
                 player.GetKitchenObject().SetKitchenObjectParent(this);
                 maxCuts = GetKitchenObject().GetNumberOfCuts();                
@@ -27,6 +27,17 @@ public class CuttingCounter : BaseCounter, IHasProgress
                 cuttingProgress = 0;
                 OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs(0));
                 GetKitchenObject().SetKitchenObjectParent(player);
+            }
+            else
+            {
+                if(player.GetKitchenObject() is PlateKitchenObject)
+                {
+                    PlateKitchenObject plateKitchenObject = player.GetKitchenObject() as PlateKitchenObject;
+                    if(plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
+                    {
+                        GetKitchenObject().DestroySelf();
+                    }
+                }
             }
         }
     }
